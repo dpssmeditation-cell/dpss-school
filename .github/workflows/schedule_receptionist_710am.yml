@@ -1,0 +1,14 @@
+name: "7:10 AM - Receptionist Morning (Mon-Fri)"
+
+on:
+  schedule:
+    - cron: '10 0 * * 1-5'  # 7:10 AM UTC+7
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run script
+        run: python3 scripts/receptionist_bot_710am.py

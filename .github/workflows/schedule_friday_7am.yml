@@ -1,0 +1,24 @@
+name: "7:00 AM - Weekly Plan Drop (Friday)"
+
+on:
+  schedule:
+    - cron: '0 0 * * 5'  # 7:00 AM UTC+7, Friday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run script
+        run: python3 scripts/telegram_bot_friday_7am.py
+      - name: Save counter
+        run: |
+          git config user.email "bot@dpss.school"
+          git config user.name "DPSS Bot"
+          git add counter.json
+          git diff --staged --quiet || git commit -m "Update counter [skip ci]"
+          git push

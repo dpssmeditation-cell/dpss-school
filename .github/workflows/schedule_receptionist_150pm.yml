@@ -1,0 +1,14 @@
+name: "1:50 PM - Receptionist Late Payment (Mon-Fri)"
+
+on:
+  schedule:
+    - cron: '50 6 * * 1-5'  # 1:50 PM UTC+7
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run script
+        run: python3 scripts/receptionist_bot_150pm.py
