@@ -13,12 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run script
         run: python3 scripts/telegram_bot_4pm.py
       - name: Save counter
         run: |
           git config user.email "bot@dpss.school"
           git config user.name "DPSS Bot"
+          git pull --rebase origin main
           git add counter.json
           git diff --staged --quiet || git commit -m "Update counter [skip ci]"
           git push
