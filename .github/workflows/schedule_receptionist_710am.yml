@@ -1,8 +1,8 @@
-name: "7:10 AM - Receptionist Morning (Mon-Fri)"
+name: "6:40 AM - Receptionist Morning (Mon-Fri)"
 
 on:
   schedule:
-    - cron: '10 0 * * 1-5'  # 7:10 AM UTC+7
+    - cron: '40 23 * * 0-4'  # 6:40 AM UTC+7 (23:40 UTC Sun-Thu)
   workflow_dispatch:
 
 jobs:

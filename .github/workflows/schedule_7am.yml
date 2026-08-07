@@ -1,8 +1,8 @@
-name: "7:00 AM - Late Students & Attendance (Mon-Fri)"
+name: "6:30 AM - Late Students & Attendance (Mon-Fri)"
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'  # 7:00 AM UTC+7
+    - cron: '30 23 * * 0-4'  # 6:30 AM UTC+7 (23:30 UTC Sun-Thu)
   workflow_dispatch:
 
 permissions:
