@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run script
-        run: python3 scripts/telegram_bot_7am.py
+        run: python3 scripts/telegram_bot_630am.py
       - name: Save counter
         run: |
           git config user.email "bot@dpss.school"

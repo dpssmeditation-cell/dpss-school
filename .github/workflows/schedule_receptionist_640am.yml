@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run script
-        run: python3 scripts/receptionist_bot_710am.py
+        run: python3 scripts/receptionist_bot_640am.py
