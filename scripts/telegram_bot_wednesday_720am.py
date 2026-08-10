@@ -12,8 +12,8 @@ CHAT_ID = os.environ.get("CHAT_ID", "-1001769054756")
 MESSAGE_TEMPLATE = """Head-Teachers- Dear English FT Teachers
 
 Our weekly meeting will start at: 
-Morning shift: 8:00
-Afternoon shift: 2:00
+<b>Morning shift: 8:00
+Afternoon shift: 2:00</b>
 Thank you."""
 
 def send_message(text):
