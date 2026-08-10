@@ -8,7 +8,7 @@ CHAT_ID = os.environ.get("RECEPTIONIST_CHAT_ID", "-1001554726520")
 
 today_date = datetime.datetime.now().strftime("%d.%m.%Y")
 
-MESSAGE_TEMPLATE = f"""5). Absent FT&Khmer Students - Afternoon Shift ({today_date}). Please write absent/late students in the comment below."""
+MESSAGE_TEMPLATE = f"""5).<b>Absent FT&Khmer Students - Afternoon Shift ({today_date}).</b> Please write absent/late students in the comment below."""
 
 def send_message(text):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
