@@ -11,13 +11,13 @@ CHAT_ID = os.environ.get("CHAT_ID", "-1001769054756")
 
 today_date = datetime.datetime.now().strftime("%B %-d, %Y")
 
-MESSAGE_TEMPLATE_1 = f"""Pha & Derith- Afternoon English FT - info about meeting from 2A-5B. ({today_date})
+MESSAGE_TEMPLATE_1 = f"""<b>Pha & Derith- Afternoon English FT - info</b> about meeting from 2A-5B. ({today_date})
 
 Note: Please comment "Noted" after listening.
 
 Thanks"""
 
-MESSAGE_TEMPLATE_2 = f"""Chanthy- Afternoon and English FT - info about meeting from 1A-Pre2A. ({today_date})
+MESSAGE_TEMPLATE_2 = f"""<b>Chanthy- Afternoon and English FT - info</b> about meeting from 1A-Pre2A. ({today_date})
 
 Note: Please comment "Noted" after listening.
 
