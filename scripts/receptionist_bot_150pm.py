@@ -8,7 +8,7 @@ CHAT_ID = os.environ.get("RECEPTIONIST_CHAT_ID", "-1001554726520")
 
 today_date = datetime.datetime.now().strftime("%d.%m.%Y")
 
-MESSAGE_TEMPLATE = f"""6). Late Payment lists for {today_date} Find the attached file in the comment below. Thanks!"""
+MESSAGE_TEMPLATE = f"""6).<b>Late Payment lists for {today_date}</b> Find the attached file in the comment below. Thanks!"""
 
 def send_message(text):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
