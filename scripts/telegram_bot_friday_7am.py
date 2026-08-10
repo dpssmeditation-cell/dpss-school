@@ -9,11 +9,11 @@ import telegram_utils
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8561116340:AAHcJyudj3FhFolhAnNIFt8I76WcdQjXtH8")
 CHAT_ID = os.environ.get("CHAT_ID", "-1001769054756")
 
-MESSAGE_TEMPLATE_1 = """Pha & Derith: FT Drop your Weekly Plan and Daily Teaching Notes. 2A-5B.
+MESSAGE_TEMPLATE_1 = """<b>Pha & Derith:</b> FT Drop your Weekly Plan and Daily Teaching Notes. 2A-5B.
 
 Deadline: 9:30 AM."""
 
-MESSAGE_TEMPLATE_2 = """Chanthy: FT Drop your Weekly Plan and Daily Teaching Notes. 1A-Pre-2AII.
+MESSAGE_TEMPLATE_2 = """<b>Chanthy:</b> FT Drop your Weekly Plan and Daily Teaching Notes. 1A-Pre-2AII.
 
 Deadline: 9:30 AM."""
 
