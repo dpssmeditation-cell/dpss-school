@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 import telegram_utils
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8561116340:AAHcJyudj3FhFolhAnNIFt8I76WcdQjXtH8")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID", "-1001769054756")
 
 today_date = datetime.datetime.now().strftime("%B %-d, %Y")

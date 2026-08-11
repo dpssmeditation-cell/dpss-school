@@ -3,7 +3,7 @@ import json
 import datetime
 import os
 
-BOT_TOKEN = os.environ.get("RECEPTIONIST_BOT_TOKEN", "8984514690:AAF4CM76QTDFgDKhugvSdTFYq6cV2a-lqy4")
+BOT_TOKEN = os.environ.get("RECEPTIONIST_BOT_TOKEN")
 CHAT_ID = os.environ.get("RECEPTIONIST_CHAT_ID", "-1001554726520")
 
 today_date = datetime.datetime.now().strftime("%d.%m.%Y")

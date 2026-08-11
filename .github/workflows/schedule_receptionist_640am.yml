@@ -2,7 +2,7 @@ name: "6:40 AM - Receptionist Morning (Mon-Fri)"
 
 on:
   schedule:
-    - cron: '40 23 * * 0-4'  # 6:40 AM UTC+7 (23:40 UTC Sun-Thu)
+    - cron: '55 22 * * 0-4'
   workflow_dispatch:
 
 jobs:
@@ -12,3 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run script
         run: python3 scripts/receptionist_bot_640am.py
+        env:
+          TZ: "Asia/Phnom_Penh"
+          TARGET_TIME: "06:40"
+          RECEPTIONIST_BOT_TOKEN: ${{ secrets.RECEPTIONIST_BOT_TOKEN }}

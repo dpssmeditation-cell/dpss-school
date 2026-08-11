@@ -2,7 +2,7 @@ name: "7:20 AM - Weekly Meeting Reminder (Wednesday)"
 
 on:
   schedule:
-    - cron: '20 0 * * 3'  # 7:20 AM UTC+7, Wednesday
+    - cron: '35 23 * * 2'
   workflow_dispatch:
 
 permissions:
@@ -17,6 +17,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run script
         run: python3 scripts/telegram_bot_wednesday_720am.py
+        env:
+          TZ: "Asia/Phnom_Penh"
+          TARGET_TIME: "07:20"
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Save counter
         run: |
           git config user.email "bot@dpss.school"
