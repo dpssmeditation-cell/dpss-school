@@ -25,7 +25,7 @@ Thanks"""
 
 def send_message(text):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    data = {"chat_id": CHAT_ID, "text": text}
+    data = {"chat_id": CHAT_ID, "text": text, "parse_mode": "HTML"}
     req = urllib.request.Request(url, data=json.dumps(data).encode("utf-8"), headers={"Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req) as response:
