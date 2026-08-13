@@ -2,7 +2,7 @@ name: "10:00 AM - Morning English FT (Mon-Fri)"
 
 on:
   schedule:
-    - cron: '15 2 * * 1-5'
+    - cron: '0 1 * * 1-5'
   workflow_dispatch:
 
 permissions:

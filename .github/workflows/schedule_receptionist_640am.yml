@@ -2,7 +2,7 @@ name: "6:40 AM - Receptionist Morning (Mon-Fri)"
 
 on:
   schedule:
-    - cron: '55 22 * * 0-4'
+    - cron: '40 21 * * 0-4'
   workflow_dispatch:
 
 jobs:
