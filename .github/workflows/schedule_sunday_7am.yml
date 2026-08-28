@@ -2,7 +2,6 @@ name: "7:00 AM - Weekly Plan Drop (Sunday)"
 
 on:
   schedule:
-    - cron: '0 22 * * 6'
   workflow_dispatch:
 
 permissions:
